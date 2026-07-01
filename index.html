@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bindu K R | Portfolio</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2 class="logo">Bindu<span>.</span></h2>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Bindu K R</span></h1>
+            <h2>I'm a <span id="typewriter"></span><span class="cursor">|</span></h2>
+            <p>
+                Passionate about Web Development, Java Programming, and creating modern, user-friendly applications.
+            </p>
+            <div class="hero-actions">
+                <button id="resumeBtn"><i class="fa-solid fa-download"></i> Download Resume</button>
+                <a href="#contact" class="btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-frame">
+                <!-- User's profile photo -->
+                <img src="images/profile.jpg" alt="Bindu K R" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400'">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-container">
+            <h2>About Me</h2>
+            <div class="about-divider"></div>
+            <p>
+                Hello! I'm <strong>Bindu K R</strong>, an MCA graduate with a deep passion for
+                web development and Java programming. I enjoy building responsive, clean websites
+                and learning new technologies. My long-term goal is to become an expert Full Stack Developer, 
+                crafting robust backends and delightful frontend user interfaces.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="section-container">
+            <h2>My Skills</h2>
+            <div class="about-divider"></div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="fa-brands fa-java skill-icon" style="color: #f89820;"></i>
+                    <span>Java</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5 skill-icon" style="color: #e34f26;"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt skill-icon" style="color: #1572b6;"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-js skill-icon" style="color: #f7df1e;"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-database skill-icon" style="color: #00758f;"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-server skill-icon" style="color: #336791;"></i>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-code skill-icon" style="color: #007acc;"></i>
+                    <span>VS Code</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <h2>Featured Projects</h2>
+            <div class="about-divider"></div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-hand-pointer"></i></div>
+                    <h3>Air Gesture Keyboard</h3>
+                    <p>Final year degree project — a contactless typing system leveraging computer vision to map hand gestures in the air to keys, eliminating physical interaction.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>MediaPipe</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3>Steganography &amp; Cryptography</h3>
+                    <p>Postgraduate project combining advanced image steganography and standard encryption techniques to hide and secure confidential information inside carrier images.</p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>Cryptography</span>
+                        <span>GUI</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-credit-card"></i></div>
+                    <h3>Secure ATM Authentication</h3>
+                    <p>Postgraduate project introducing multi-factor authentication and improved secure communications to protect ATMs from identity theft and fraud.</p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>Security</span>
+                        <span>API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <h2>Get In Touch</h2>
+            <div class="about-divider"></div>
+            <div class="contact-wrapper">
+                <!-- Left Column: Contact details -->
+                <div class="contact-info">
+                    <h3>Let's talk about something great!</h3>
+                    <p>I'm currently seeking job opportunities as a Full Stack / Java Developer. If you have a question, want to collaborate, or just want to connect, feel free to write to me.</p>
+                    <div class="info-details">
+                        <p><i class="fa-regular fa-envelope"></i> bindugowda300@gmail.com</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka, India</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://wa.me/916361116586" target="_blank" class="whatsapp-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <!-- Right Column: Interactive contact form -->
+                <div class="contact-form-container">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="formName" required placeholder=" ">
+                                <label for="formName">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="formEmail" required placeholder=" ">
+                                <label for="formEmail">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="formSubject" required placeholder=" ">
+                            <label for="formSubject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="formMessage" required rows="5" placeholder=" "></textarea>
+                            <label for="formMessage">Your Message</label>
+                        </div>
+                        <button type="submit" id="formSubmitBtn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                    <div id="formFeedback" class="form-feedback"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Bindu K R. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
