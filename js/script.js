@@ -157,3 +157,22 @@ function showFeedback(text, type) {
         formFeedback.className = `form-feedback ${type}`;
     }
 }
+
+// Scroll Reveal Animation
+const revealElements = document.querySelectorAll('.reveal');
+
+function revealOnScroll() {
+    revealElements.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 100; // trigger point
+
+        if (elementTop < windowHeight - revealPoint) {
+            element.classList.add('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+// Run once on load
+revealOnScroll();
